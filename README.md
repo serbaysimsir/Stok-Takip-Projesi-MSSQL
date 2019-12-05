@@ -1,2 +1,2 @@
-# Stok-Takip-Projesi-MSSQL
-Stok Takip Projesi
+# MSSQL Veri Tabanı Bağlantılı Stok Takip Sistemi
+Hastanede bulunan teknolojik aletlerin stoklarının yönetimi için geliştirilmiş masaüstü uygulaması.
