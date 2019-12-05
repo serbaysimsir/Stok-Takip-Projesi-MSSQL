@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FD49697-5241-4DC9-A8FB-34BDD5EB8109}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DXApplication1</RootNamespace>
+    <AssemblyName>DXApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v18.2" />
+    <Reference Include="DevExpress.Charts.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.2" />
+    <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Export, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2" />
+    <Reference Include="DevExpress.Sparkline.v18.2.Core" />
+    <Reference Include="DevExpress.Utils.v18.2.UI, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2" />
+    <Reference Include="DevExpress.Printing.v18.2.Core" />
+    <Reference Include="DevExpress.XtraGauges.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.2.Extensions, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenu.Designer.cs">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BirimYoneticisiGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BirimYoneticisiGirisEkrani.Designer.cs">
+      <DependentUpon>BirimYoneticisiGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BolumRaporcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BolumRaporcs.Designer.cs">
+      <DependentUpon>BolumRaporcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisEkrani.Designer.cs">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KisiRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KisiRapor.Designer.cs">
+      <DependentUpon>KisiRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucKisiRapor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucKisiRapor.Designer.cs">
+      <DependentUpon>ucKisiRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KisiRaporu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="KisiRaporu.Designer.cs">
+      <DependentUpon>KisiRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\Islemler.cs" />
+    <Compile Include="Model\Kisi.cs" />
+    <Compile Include="Model\Kullanicilar.cs" />
+    <Compile Include="Model\Personel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SatinAlmaSorumluGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatinAlmaSorumluGirisEkrani.Designer.cs">
+      <DependentUpon>SatinAlmaSorumluGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stok_takipDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stok_takipDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGirisEkrani.Designer.cs">
+      <DependentUpon>AdminGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAtigaGonder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAtigaGonder.Designer.cs">
+      <DependentUpon>ucAtigaGonder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBolumRapor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBolumRapor.Designer.cs">
+      <DependentUpon>ucBolumRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPersonel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPersonel.Designer.cs">
+      <DependentUpon>ucPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSatinAlma.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSatinAlma.Designer.cs">
+      <DependentUpon>ucSatinAlma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Urun.cs" />
+    <Compile Include="ucZimmetiAl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucZimmetiAl.Designer.cs">
+      <DependentUpon>ucZimmetiAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucZimmetle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucZimmetle.Designer.cs">
+      <DependentUpon>ucZimmetle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BolumRaporu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BolumRaporu.Designer.cs">
+      <DependentUpon>BolumRaporu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaMenu.resx">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BirimYoneticisiGirisEkrani.resx">
+      <DependentUpon>BirimYoneticisiGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BolumRaporcs.resx">
+      <DependentUpon>BolumRaporcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisEkrani.resx">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KisiRapor.resx">
+      <DependentUpon>KisiRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucKisiRapor.resx">
+      <DependentUpon>ucKisiRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KisiRaporu.resx">
+      <DependentUpon>KisiRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminGirisEkrani.resx">
+      <DependentUpon>AdminGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatinAlmaSorumluGirisEkrani.resx">
+      <DependentUpon>SatinAlmaSorumluGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAtigaGonder.resx">
+      <DependentUpon>ucAtigaGonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBolumRapor.resx">
+      <DependentUpon>ucBolumRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPersonel.resx">
+      <DependentUpon>ucPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSatinAlma.resx">
+      <DependentUpon>ucSatinAlma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucZimmetiAl.resx">
+      <DependentUpon>ucZimmetiAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucZimmetle.resx">
+      <DependentUpon>ucZimmetle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BolumRaporu.resx">
+      <DependentUpon>BolumRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="stok_takipDataSet.xsc">
+      <DependentUpon>stok_takipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="stok_takipDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stok_takipDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stok_takipDataSet.xss">
+      <DependentUpon>stok_takipDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
